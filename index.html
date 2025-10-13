@@ -1,94 +1,116 @@
 <!-- TODO 1: Create the HTML Boilerplate -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Matt Portfolio</title>
-  </head>
-  <body>
-    <div class="nav-container container">
-      <nav>
-        <div class="profile-logo">
-          <h2>Matt Nandavong</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" href="./style/css/index.css" /> -->
+  <link rel="stylesheet" href="./style/scss/custom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Display&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <title>Matt Portfolio</title>
+</head>
+
+<body class="bg-primary m-3 d-flex flex-wrap g-2 g-sm-1 gap-3">
+
+  <!-- Navbar -->
+  <div class="border rounded-4 border-primary-subtle bg-gradient container    ">
+    <nav class="navbar navbar-expand-md container  " data-bs-theme="dark">
+      <div class="container-fluid ">
+        <a href="#" class="navbar-brand ">
+          <h2 class="text-secondary">Matt Nandavong</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class=" justify-items-center collapse navbar-collapse justify-content-end "
+          id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item "><a href="./public/about.html" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="./public/contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="./public/projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="./public/hobbies.html" class="nav-link">Hobbies</a></li>
+          </ul>
+
         </div>
-        <div class="nav-list">
-          <a href="./public/about.html">About Me</a>
-          <a href="./public/contact.html">Contact</a>
-          <a href="./public/projects.html">Projects</a>
-          <a href="./public/hobbies.html">Hobbies</a>
-        </div>
-        <div class="social">
-          <h2>social</h2>
-        </div>
-      </nav>
-    </div>
-    <!-- Advertising part -->
-    <div class="about-container container">
-      <div class="profile-img">
-        <img src="./assets/images/matt logo black.png" alt="matt" />
+
       </div>
-      <div class="about">
-        <h2>About Me</h2>
+
+    </nav>
+  </div>
+
+
+  <!-- Advertising part -->
+  <div class="border rounded-4 border-primary-subtle bg-gradient container  ">
+    <div class="row justify-content-center p-sm-3 p-lg-5">
+
+      <img class="bg-secondary rounded  img-fluid col-sm-8 col-md-6 col-lg-4 " src="./assets/images/matt logo black.png"
+        alt="matt" />
+
+
+
+      <div class="col-sm-8 col-md-6 col-lg-6 py-3 px-md-4 px-sm-0 align-content-center">
+        <h2>Recent Graduates</h2>
         <p>
-          A recent Master of Information Technology (Software Development)
-          graduate with hands-on experience in full-stack and mobile application
-          development, seeking an entry-level web or software developer
-          position. Skilled in HTML, CSS, JavaScript, and Flutter, with
-          foundational knowledge of PHP, Node.js, and database management
-          (MySQL, MongoDB).
+          More than 2 years of academic and personal projects experience in Software Engineering, Web & Mobile
+          Application
+          Development.
         </p>
       </div>
     </div>
+  </div>
 
-    <div class="overview">
-      <div class="sk-rm-container">
-        <div class="skill-container container">
-          <h2>Skills</h2>
-          <div class="skill-list">
-            <p class="skill-item">React.js</p>
-            <p class="skill-item">React.jsReact.js</p>
-            <p class="skill-item">React.jsReact.js</p>
-            <p class="skill-item">React.js</p>
-            <p class="skill-item">React.jsReact.js</p>
-            <p class="skill-item">React.js</p>
-          </div>
-        </div>
-        <!-- Resume part -->
-        <div class="resume-container container">
-          <h2>Resume</h2>
-          <div class="resume-download">
-            <p>more details about my career</p>
-            <a href="/">Open</a>
-          </div>
+  <div class="container row  mx-auto px-0">
+    <!-- Project showcase -->
+    <div class="col col-lg-7 col-sm-12 border border-primary-subtle rounded-4 p-3 order-first">
+      <h2>Check out my projects.</h2>
+      <div class="project-item col-11 mx-auto border-info border p-3 rounded-4 my-3">
+        <p class="badge text-bg-info">React.js</p>
+        <h3>Connect My Task</h3>
+        <p>
+          The goal was to design and develop a cross-platform mobile app to
+          help small teams manage tasks, share progress in real time, and
+          receive instant notifications. The project aimed to demonstrate
+          full-stack mobile development skills and deliver a working product
+          ready for Google Play deployment.
+        </p>
+      
+      </div>
+      
+    </div>
+
+    <div class="col col-lg-5 col-sm-12 d-grid  px-0 ps-lg-3 mt-sm-3 mt-lg-0 gap-3  ">
+      <div class="border border-primary-subtle rounded-4 p-3 bg-gradient">
+        <h2>Skills</h2>
+        <div class="d-flex flex-wrap">
+          <p class="btn btn-outline-secondary mx-1">React.js</p>
+          <p class="btn btn-outline-secondary mx-1">React.jsReact.js</p>
+          <p class="btn btn-outline-secondary mx-1">React.jsReact.js</p>
+          <p class="btn btn-outline-secondary mx-1">React.js</p>
+          <p class="btn btn-outline-secondary mx-1">React.jsReact.js</p>
+          <p class="btn btn-outline-secondary mx-1">React.js</p>
         </div>
       </div>
-      <!-- skill part -->
-
-      <!-- Project showcase -->
-      <div class="project-container container">
-        <h2>Check out my projects.</h2>
-        <div class="project-item">
-          <p class="project-skill">React.js</p>
-          <h3>Connect My Task</h3>
-          <p>
-            The goal was to design and develop a cross-platform mobile app to
-            help small teams manage tasks, share progress in real time, and
-            receive instant notifications. The project aimed to demonstrate
-            full-stack mobile development skills and deliver a working product
-            ready for Google Play deployment.
-          </p>
+      <!-- Resume part -->
+      <div class="border border-primary-subtle rounded-4 p-3 d-flex gap-3 align-items-center">
+        <h2>Resume</h2>
+        <div class="d-flex gap-3 align-items-center">
+          <p class="text-secondary">more details about my career</p>
+          <a href="/" class="btn btn-secondary">Open</a>
         </div>
       </div>
     </div>
-  </body>
+    <!-- skill part -->
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </html>
 
 <!-- TODO 2: Add Your previous projects' HTML into the public folder -->
